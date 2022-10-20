@@ -1,0 +1,131 @@
+body{
+    background-color: rgb(204, 242, 177);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+}
+header{
+    height: 258px;
+}
+nav{
+    height: 30px;
+    background-color: rgb(146, 216, 53);
+    box-shadow: 0px 5px 5px rgb(208, 208, 208);
+    border-bottom:1px solid rgb(135, 201, 49);
+}
+
+.container{
+    width: 770px;
+    height: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: 2px solid rgb(114, 162, 56);
+}
+.img_header{
+    height: 258px;
+    float: left;
+}
+.titre_site{
+    float: left;
+    position: relative;
+    left: 30px;
+    color: rgb(51, 41, 141);
+    font-size: 1.6em;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.menu{
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    width: 130px;
+    height: 30px;
+    float: left;
+    background-color: rgb(146, 216, 53);
+    border-right: 1px solid;    
+    letter-spacing: 3px;
+    font-weight:600;
+}
+.image_site{
+    padding: 10px;
+    padding-top: 25px;
+    width: 60px;
+    height: 1100px;
+    float: left;
+}
+.article{
+    text-align: justify;
+    padding-top: 10px;
+    margin: 10px;
+    float: left;
+    width: 650px;
+}
+.titre_article{
+    height: 22px;
+    color: rgb(114, 162, 56);
+    border-bottom: 1px solid rgb(114, 162, 56);
+    margin-bottom: 10px;
+}
+.img_titre{
+    float: left;
+}
+.texte_titre{
+    padding-left: 5px;
+    float: left;
+}
+p::first-letter{
+    margin-left: 15px;
+}
+
+.sous_article{
+    text-align: justify;
+    padding-top: 10px;
+    margin: 10px;
+    float: left;
+    width: 650px;
+}
+.titre_sous_article{
+    height: 22px;
+    color: rgb(114, 162, 56);
+    border-bottom: 1px solid rgb(114, 162, 56);
+    border-left: 3px solid rgb(114, 162, 56);
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+
+
+
+.menu:hover{
+    background-color: rgb(172, 255, 63);
+}
+.sous_menu{
+    display: none; 
+}
+.sous_menu div {
+    height: 30px;
+}
+.sous_menu div:hover{
+    background-color: rgb(114, 162, 56);
+}
+
+.menu:hover .sous_menu{
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    width: 130px;
+    height: 120px;
+    background-color: rgb(172, 255, 63);
+    border-right: 1px solid;    
+    letter-spacing: 3px;
+    position: absolute;
+    top: 300px;
+}
+
+
+

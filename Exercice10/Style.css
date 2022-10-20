@@ -1,0 +1,116 @@
+:root{
+    --hauteur-menu : 60px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    width: 100%;
+    font-size: 18px;
+    position: sticky;
+    top: 0;
+}
+
+nav > ul{
+    display: flex;
+    text-align: center;
+    box-shadow: 1px 1px 1px rgb(218, 218, 218);
+    height: var(--hauteur-menu);
+}
+
+nav ul{
+    list-style-type:none;
+}
+
+nav > ul > li{
+    background-color: white;
+    position: relative;
+    height: 100%;
+    flex: 1;
+}
+
+nav > ul > li > a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,- 50%);
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+.main_menu1 > a::after{
+    content:'>';
+    font-size: 16px;
+    margin-left: 7px;
+    display: inline-block;
+}
+
+.sous_menu{
+    margin-top: var(--hauteur-menu);
+    width: 100%;
+    text-align: left;
+    background-color: white;
+    border-radius: 2px;
+    overflow: hidden;
+    max-height: 0;
+
+}
+
+.sous_menu > li > a{
+    height: 50px;
+    padding-left: 20px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+nav > ul > li:hover > a{
+    color: #2169EC;
+}
+
+.sous_menu > li:hover{
+    background-color: rgba(33, 105, 236, 0.3);
+}
+.sous_menu > li:hover > a{
+    color: white;
+}
+
+
+
+
+@keyframes rotationFleche{
+    0%{
+        transform: rotateX(0deg)
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes apparitionSousMenu{
+    0%{
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0);
+        border-top: 3px solid #2169EC;
+    }
+    30%{
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.3);
+    }
+    100%{
+        max-height: 50em;
+        border-top: 3px solid #2169EC;
+        box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
+
+    }
+}
+
+.main_menu1:hover > a:after{
+    animation: rotationFleche 0.2s linear forwards;
+}
+.main_menu1:hover > .sous_menu{
+    animation: apparitionSousMenu 1s forwards;
+}
