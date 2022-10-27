@@ -9,15 +9,20 @@ body{
 .petitText{
     color: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    width: 75vw;
+    width: 1100px;
     font-size: 0.8em;
 }
 
 header{
-    height: 20vh;
-    width: 100%;
+    height: 140px;
+    width: 1100px;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+header div:nth-of-type(1){
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
 }
 .div_header{
@@ -52,21 +57,24 @@ header{
 
 /* DEBUT NAV */
 nav{
+    width: 1100px;
     display: flex;
     font-size: 1.1em;
-    padding: 10px;
+    justify-content: center;
 }
 ul{
-    flex: 1;
     display: flex;
+    flex-direction: row;
     margin: 0;
-    padding: 0;
+    padding: 0.2em;
     justify-content: center;
 }
 li{
+    display: flex;
+    flex-direction: row;
     list-style: none;
-    padding-left: 30px;
-    padding-right: 30px;
+    justify-content: space-between;
+    padding-right: 2.5em;
 }
 a{
     text-decoration: none;
@@ -84,7 +92,7 @@ main{
 /*DEBUT SLIDER*/
 .slider{
     margin: 30px;
-    height: 65vh;
+    height: 500px;
     background-image: url(./Images/danequin.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -94,8 +102,8 @@ main{
     align-items: center;
 }
 .blockNoir{
-    height: 25vh;
-    width: 40vw;
+    height: 200px;
+    min-width: 700px;
     background-color: rgb(33, 32, 32);
     display: flex;
     flex-direction: column;
@@ -116,12 +124,13 @@ main{
     font-size: 2.2em;
 }
 .petitBoutonSlider{
-    position: absolute;
-    bottom: 5%;
+    position: relative;
+    bottom: 50%;
     width: 30px;
     height: 30px;
     border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 50%;
+    translate: 0 100px;
     transition: background-color 0.25s linear;
     animation: animation_petitBoutonSlider 2s linear infinite;
     
@@ -156,7 +165,7 @@ main{
 
 /* DEBUT DOMAINE */
 .domaine{
-    height: 80vh;
+    height: 600px;
     background-image: url(./Images/pattern.jpg);
     display: flex;
     flex-direction: column;
@@ -164,8 +173,7 @@ main{
     align-items: center;
 }
 .block_domaine{
-    flex: 1;
-    width: 45%;
+    width: 1100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -290,15 +298,14 @@ main{
 
 /* DEBUT CONTENU */
 .contenu{
-    height: 130vh;
-    width: 100%;
+    height: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .block_contenu{
-    height: 100%;
-    width: 80%;
+    height: 900px;
+    width: 1100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -323,7 +330,6 @@ main{
 }
 .contenu_centre{
     display: flex;
-    width: 100%;
     margin: 20px;
 
 }
@@ -384,11 +390,12 @@ main{
 
 /* DEBUT FOOTER */
 footer{
-    height: 55vh;
+    height: 400px;
     width: 100%;
 }
 .footerHaut{
     height: 75%;
+    width: 100%;
     background-color: rgb(230, 229, 229);
     display: flex;
     justify-content: center;
@@ -404,7 +411,7 @@ footer{
     color: white;
 }
 .block_footerHaut{
-    width: 70%;
+    width: 1100px;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -412,7 +419,7 @@ footer{
 }
 .div_block_footerHaut1{
     height: 50%;
-    width: 33%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -423,14 +430,14 @@ footer{
 }
 .div_block_footerHaut2{
     height: 50%;
-    width: 33%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 .div_block_footerHaut3{
     height: 50%;
-    width: 33%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
